@@ -1,0 +1,23 @@
+Functions that stayed:
+load and loadImages - both loads use a Scanner object as a parameter that reads lines from other files
+processLine and processImageLine - process parses information from other classes
+setAlpha - does not use objects from any classes in its methods or parameters
+creates* - does not use objects from any classes, functions do not act on any objects
+parses* - function does not act on objects from any other classes
+
+Ambiguous Functions:
+moveTo*
+1. Entity class
+2. I chose the Entity class instead of the WorldModel class because the method is moving an Entity to another Entity
+object and it takes in two entity objects in its parameter.
+
+nearestEntity/findNearest
+1. WordModel class
+2. I chose the WorldModel class because the parameter of the method is taking in a list of entities. It also makes
+more sense that the WorldModel would have information on where the nearest Entity is than an Entity class.
+
+getBackgroundImage
+1. WorldModel class
+2. I chose WorldModel over the Background class because the method's parameter took in a WorldModel object but not
+a Background object.
+
